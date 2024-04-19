@@ -7,7 +7,7 @@ function Table() {
                     <div class="col-md-12">
                         <section class='container-fluid'>
                             <div class='justify-content-center'>
-                                <h1>Usuarios Registrados</h1>
+                                <h1>Personajes</h1>
 
                                 <div class='table-responsive'>
                                     <p>
@@ -46,7 +46,7 @@ function Table() {
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            
+
                                         </tbody>
                                     </table>
                                 </div>
