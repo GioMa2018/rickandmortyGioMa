@@ -6,12 +6,12 @@ function Table() {
                 <div class="row">
                     <div class="col-md-12">
                         <section class='container-fluid'>
-                            <div class='justify-content-center' style='margin-top: 100px;'>
+                            <div class='justify-content-center'>
                                 <h1>Usuarios Registrados</h1>
 
                                 <div class='table-responsive'>
                                     <p>
-                                        <a asp-action="Insert" asp-controller="Table" class="btn btn-light">Añadir un nuevo usuario</a>
+                                        <a asp-action="Insert" asp-controller="Table" class="btn btn-light">Consultar a todos los personajes</a>
                                     </p>
                                     <table id="Nombre_Tabla" class='table table-striped'>
                                         <thead>
@@ -46,36 +46,6 @@ function Table() {
                                             </tr>
                                         </thead>
                                         <tbody>
-
-                                            <tr>
-                                                <td>
-                                                    
-                                                </td>
-                                                <td>
-                                                    
-                                                </td>
-                                                <td>
-                                                    
-                                                </td>
-                                                <td>
-                                                    
-                                                </td>
-                                                <td>
-                                                    
-                                                </td>
-                                                <td>
-                                                    
-                                                </td>
-                                                <td>
-                                                    
-                                                </td>
-                                                <td>
-                                                    
-                                                </td>
-                                                <td>
-                                                    
-                                                </td>
-                                            </tr>
                                             
                                         </tbody>
                                     </table>
