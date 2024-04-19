@@ -1,0 +1,435 @@
+:root{
+  --Mi-Nombre: 'Rock Salt', cursive;
+
+  --TipoLetra-Titulos: 'Rubik Dirt', cursive;
+  --Tamaño-Titulos: 2rem;
+
+  --Color-Blanco-Partes-Letra: #F8F7F7;
+  --Color-Amarillo-Partes-Letra: #FFC300;
+  --Color-Naranja-Partes-Letra:#FF5733;
+  --Color-Rojo-Partes-Letra:#C70039;
+  --Color-Azul-Partes-Letra:#1b1b32;
+  --Color-Gris-Bordes: #615151;
+  --Color-Negro-Partes-Letra:#181818;
+  --Color-Transparente-Partes-Letra: transparent;
+}
+
+/* Estilos generales */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: var(--Mi-Nombre);
+  font-size: var(--Tamaño-Titulos);
+}
+
+.seccion-titulo-SobreMi{
+  font-family: var(--TipoLetra-Titulos);
+  font-size: var(--Tamaño-Titulos);
+  padding: 15px 0;
+}
+
+.seccion-titulo-Hablemos{
+  font-family: var(--TipoLetra-Titulos);
+  font-size: var(--Tamaño-Titulos);
+  color: var(--Color-Amarillo-Partes-Letra);
+  padding: 15px 0;
+}
+
+.seccion-titulo-Hablemos:hover{
+  color: var(--Color-Azul-Partes-Letra);
+}
+
+.seccion-descripcion{
+  font-size: 1.2rem;
+  color: var(--Color-Gris-Bordes);
+}
+
+.seccion-texto{
+  font-size: 1.2rem;
+}
+
+.seccion-oscura{
+  color: var(--Color-Blanco-Partes-Letra);
+  background-color: var(--Color-Azul-Partes-Letra);
+}
+
+.seccion-clara{
+  color: var(--Color-Azul-Partes-Letra);
+  background-color: var(--Color-Blanco-Partes-Letra);
+}
+
+.btn-info{
+  font-size: 1.1rem;
+  margin: 20px;
+  font-weight: bold;
+}
+
+.texto-negro{
+  color: var(--Color-Azul-Partes-Letra);
+}
+
+.texto-blanco{
+  color: var(--Color-Blanco-Partes-Letra);
+}
+
+/* Barra de Navegación */
+.white-icon {
+  color: white;
+}
+
+.navbar {
+padding: 0.5rem;
+background-color: var(--Color-Transparente-Partes-Letra) !important;
+border: none;
+}
+
+.navbar-collapse {
+align-items: center;
+justify-content: space-between;
+}
+
+/* Establecer el color del texto de las opciones de la barra de navegación a blanco */
+.navbar-nav .nav-link {
+  color: var(--Color-Blanco-Partes-Letra) !important;
+}
+
+/* Agregar un subrayado blanco al pasar el mouse sobre las opciones */
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}   
+
+/* Establecer el color del texto de las opciones de la barra de navegación a blanco */
+.navbar.fixed-top .navbar-nav .nav-link {
+  color: var(--Color-Blanco-Partes-Letra) !important;
+}
+
+/* Agregar un subrayado blanco al pasar el mouse sobre las opciones */
+.navbar.fixed-top .navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Sección Hero */
+
+.hero {
+  max-height: 500px;
+  min-height: 350px;
+  text-align: center;
+  background-color: var(--Color-Negro-Partes-Letra);
+  overflow: hidden;
+
+  position: relative;
+  z-index: 1;
+}
+
+.carousel-item img,
+.carousel-item video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;  
+}
+
+.button_next {
+  background-color: var(--Color-Rojo-Partes-Letra);
+  border: none;
+  border-radius: 50%;
+}
+
+/* Estilos para la capa overlay */
+.overlay_Hero {
+  position: absolute;
+  top: 50%; /* Coloca la capa en la mitad vertical del carrusel */
+  left: 0;
+  right: 0;
+  transform: translateY(-50%); /* Centra verticalmente */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo transparente con opacidad */
+  width: 100%;
+  text-align: center;
+}
+
+/* Estilos para el contenedor del texto en la capa overlay */
+.container_Hero {
+  padding: 20px;
+}
+
+/* Estilos para el texto en la capa overlay */
+.content_Hero {
+  color: var(--Color-Blanco-Partes-Letra);
+}
+
+/* Sección Sobre Mi */
+.sobre-mi {
+  padding: 20px;
+}
+
+.sobre-mi .contenedor{
+  max-width: 800px;
+  min-height: 200px;
+  text-align: center;
+}
+
+/* Sesión Experiencia */
+.experiencia{
+  padding: 40px 40px 0px 40px;
+}
+
+.experiencia-titulo{
+  font-family: var(--Mi-Nombre);
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.experiencia i{
+  font-size: 2.5rem;
+  color: var(--Color-Naranja-Partes-Letra);
+  background-color: var(--Color-Azul-Partes-Letra);
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+.experiencia .columna{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover{
+  color: var(--Color-Blanco-Partes-Letra);
+  background-color: var(--Color-Azul-Partes-Letra);
+}
+
+.experiencia .columna:hover i{
+  color: var(--Color-Rojo-Partes-Letra);
+}
+
+.badges-contenedor{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.badge{
+  margin: 3px;
+  background-color: var(--Color-Amarillo-Partes-Letra);
+}
+
+/* Sección Proyectos */
+.proyectos-recientes{
+  padding: 40px;
+}
+
+.proyectos-recientes img{
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.proyectos-contenedor{
+  padding-top: 10px;
+  margin-bottom: 90px;    
+}
+
+.overlay{
+  transition: all 0.2s ease;
+  opacity: 30;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: var(--Color-Naranja-Partes-Letra);
+}
+
+.proyecto{
+  position: relative;
+}
+
+.proyecto img{
+  opacity: 0.8;
+  filter: grayscale(100%);
+}
+
+.proyecto:hover img{
+  opacity: 0.3;
+}
+
+.proyecto:hover .overlay{
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor{
+  display: flex;
+}
+
+.overlay i{
+  font-size: 60px;
+  margin: 10px;
+  color: var(--Color-Naranja-Partes-Letra);
+}
+
+.proyecto:hover .overlay p {
+  color: var(--Color-Rojo-Partes-Letra);
+}
+
+.proyecto:hover .overlay i {
+  color: var(--Color-Rojo-Partes-Letra);
+}
+
+
+/* Sección Contactame */
+.contacto .container{
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 70px;
+}
+
+.contacto .rectangulo{
+  margin-top: -5rem;
+  background-color: var(--Color-Blanco-Partes-Letra);
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px var(--Color-Azul-Partes-Letra);
+}
+
+.contacto .row{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .descripcion{
+  color: var(--Color-Azul-Partes-Letra);
+  font-size: 1.2rem;
+}
+
+.contacto button{
+  color: var(--Color-Amarillo-Partes-Letra);
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid var(--Color-Amarillo-Partes-Letra);
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+  background-color: var(--Color-Azul-Partes-Letra);
+  border: 2px solid var(--Color-Blanco-Partes-Letra);
+  color: var(--Color-Blanco-Partes-Letra);
+}
+
+.contacto button i{
+  color: var(--Color-Amarillo-Partes-Letra);
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i{
+  color: var(--Color-Blanco-Partes-Letra);
+}
+
+/* Sección Footer */
+
+footer{
+  min-height: 100px;
+}
+
+.footer-texto{
+  font-size: 1.5rem;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.iconos-redes-sociales a{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid var(--Color-Blanco-Partes-Letra);
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i{
+  color: var(--Color-Blanco-Partes-Letra);
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover{
+  background-color: var(--Color-Blanco-Partes-Letra);
+  border: 2px solid var(--Color-Amarillo-Partes-Letra);
+}
+
+.iconos-redes-sociales a:hover i{
+  color:var(--Color-Azul-Partes-Letra);
+}
+
+.derechos-de-autor{
+  font-size: 13px;
+  color: var(--Color-Gris-Bordes);
+  padding: 20px;    
+}
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 400px){
+  .navbar-brand {
+      display: none;
+  }
+}
+
+@media screen and (min-width: 400px){
+  .hero-inferior-imagen{
+      max-height: 400px;
+      min-height: 350px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .overlay p{
+      font-size: 18px;
+  }
+  .overlay i{
+      font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .testimonio-imagen{
+      height: 80px;
+      width: 80px;
+  }
+  .testimonio-texto{
+      font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .badges-contenedor{
+      font-size: 0.9rem;
+      margin: 2px 0;
+  }
+}
+
