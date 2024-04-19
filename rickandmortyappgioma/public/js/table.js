@@ -1,6 +1,6 @@
 
 $(document).ready(() => {
-  $('#Nombre_Tabla').DataTable({
+  $('#Tabla').DataTable({
     language: {
       url: '//cdn.datatables.net/plug-ins/1.13.4/i18n/es-ES.json',
     },

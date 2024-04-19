@@ -292,16 +292,33 @@ justify-content: space-between;
   color: var(--Color-Rojo-Partes-Letra);
 }
 
+/* Sección presentation-table*/
+.TituloBuscar{
+  font-family: var(--Mi-Nombre);
+  margin-bottom: 100px;
+}
+
+
+.seccionTabla{
+  min-height: 700px;
+  margin-bottom: 100px;
+}
+
+.table th{
+  background-color: #404040 !important;
+  color: white;
+  margin: 20px 5px;
+}
 
 /* Sección Contactame */
 .contacto .container{
   max-width: 1100px;
   min-height: 200px;
-  padding: 70px;
+  padding: 50px;
 }
 
 .contacto .rectangulo{
-  margin-top: -5rem;
+  margin-top: -10rem;
   background-color: var(--Color-Blanco-Partes-Letra);
   border-radius: 10px;
   box-shadow: 0px 1px 4px 1px var(--Color-Azul-Partes-Letra);
