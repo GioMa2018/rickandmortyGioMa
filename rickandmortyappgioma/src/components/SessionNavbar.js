@@ -42,7 +42,7 @@ function Navbar() {
       <div class="container_Hero">
         <div class="content_Hero">
           <h1 class="texto-blanco">Rick And Morty</h1>
-          <h2 class="texto-blanco">¿Cuál es tu personaje favorito?</h2>
+          <h2 class="texto-blanco">¿Y tú, tienes algún personaje favorito en mente?</h2>
         </div>
       </div>
     </div>

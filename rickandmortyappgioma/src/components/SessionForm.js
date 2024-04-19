@@ -12,7 +12,6 @@ function Form() {
             <p>Es un hombre mayor que trabaja como científico y acostumbra a hablar de manera vulgar y entre eructos, y la mayoría de las veces tiene un rastro de saliva en la boca. Es padre de Beth Sánchez, suegro de Jerry y el abuelo materno de Summer y Morty. Es un hombre que ha pasado gran parte de su vida viajando a través de diversas galaxias. Para él, la Tierra se llama Planeta Tierra del Universo C-137.</p>
           </div>
           
-
           <div class="columna col-12 col-md-6">
             <i class="bi bi-emoji-grin"></i>
             <p class="experiencia-titulo">Morty Smith</p>
