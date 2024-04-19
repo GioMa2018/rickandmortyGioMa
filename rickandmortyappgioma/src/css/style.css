@@ -295,9 +295,21 @@ justify-content: space-between;
 /* Sección presentation-table*/
 .TituloBuscar{
   font-family: var(--Mi-Nombre);
-  margin-bottom: 100px;
+  margin-top: 20px;
+  margin-bottom: 70px;
 }
 
+.controlTabla{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  vertical-align: middle; 
+  text-align: center; 
+}
+
+.contenidoTabla {
+  vertical-align: middle; 
+  text-align: center; 
+}
 
 .seccionTabla{
   min-height: 700px;
@@ -308,6 +320,22 @@ justify-content: space-between;
   background-color: #404040 !important;
   color: white;
   margin: 20px 5px;
+}
+
+/* Estilo del botón personalizado */
+.btn-custom {
+  background-color: #404040; /* Cambia este valor al color deseado */
+  color: #ffffff; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor tipo puntero */
+  font-size: 16px; /* Tamaño del texto */
+}
+
+/* Cambiar el color del botón al pasar el mouse */
+.btn-custom:hover {
+  background-color: #D65121; /* Cambia este valor al color deseado al pasar el mouse */
 }
 
 /* Sección Contactame */

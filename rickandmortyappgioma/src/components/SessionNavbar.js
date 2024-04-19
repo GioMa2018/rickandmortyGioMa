@@ -12,20 +12,6 @@ function Navbar() {
           <a class="navbar-brand" href="#">
             <i class="bi bi-fire white-icon"></i>
           </a>
-          <ul class="navbar-nav d-flex justify-content-center align-items-center">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sobre mi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Testimonios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contactos</a>
-            </li>
-          </ul>
         </div>
       </div>
     </nav>
