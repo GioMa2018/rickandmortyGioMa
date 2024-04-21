@@ -38,9 +38,9 @@ function Table() {
   };
 
   return (
-    <section className="seccionTabla">
-      <div className="row">
-        <div className="col-md-12">
+    <section className='seccionTabla'>
+      <div className='row'>
+        <div className='col-md-12'>
           <section className='container-fluid'>
             <div className='justify-content-center'>
               <h1 className='TituloBuscar'>Personajes</h1>
@@ -50,7 +50,7 @@ function Table() {
                   <button className='btn-custom' onClick={handlePrevPage} disabled={loading}>Anterior</button>
                 </div>
                 <div className='col-md-4 col-sm-12 controlTabla'>
-                  <input type="text" className="form-control" value={currentPage} readOnly />
+                  <input type='text' className='form-control' value={currentPage} readOnly />
                 </div>
                 <div className='col-md-4 col-sm-12 controlTabla'>
                   <button className='btn-custom' onClick={handleNextPage} disabled={loading}>Siguiente</button>
@@ -58,7 +58,7 @@ function Table() {
               </div>
 
               <div className='table-responsive'>
-                <table id="Tabla" className='table table-striped'>
+                <table id='Tabla' className='table table-striped'>
                   <thead>
                     <tr>
                       <th className='contenidoTabla'>ID</th>

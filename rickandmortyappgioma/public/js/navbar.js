@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const navbar = document.querySelector(".navbar");
-    const heroSection = document.querySelector(".hero");
+    const heroSection = document.querySelector(".intro");
 
     if (heroSection) { // Verifica si heroSection no es null
         window.addEventListener("scroll", function() {

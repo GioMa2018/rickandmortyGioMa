@@ -1,3 +1,5 @@
+/*-------------- VARIABLES GENERALES ------------------*/
+
 :root{
   --Mi-Nombre: 'Rock Salt', cursive;
 
@@ -14,7 +16,7 @@
   --Color-Transparente-Partes-Letra: transparent;
 }
 
-/* Estilos generales */
+/* Asigna estilos a las secciones */
 section {
   display: flex;
   flex-direction: column;
@@ -22,12 +24,14 @@ section {
   justify-content: center;
 }
 
+/* Asigna estilos a las titulos h1 */
 h1 {
   font-family: var(--Mi-Nombre);
   font-size: var(--Tamaño-Titulos);
 }
 
-.seccion-titulo-SobreMi{
+/* Asigna estilos al titulo LoQueNoSabias */
+.seccion-titulo-LoQueNoSabias{
   font-family: var(--TipoLetra-Titulos);
   font-size: var(--Tamaño-Titulos);
   padding: 15px 0;
@@ -44,11 +48,6 @@ h1 {
   color: var(--Color-Azul-Partes-Letra);
 }
 
-.seccion-descripcion{
-  font-size: 1.2rem;
-  color: var(--Color-Gris-Bordes);
-}
-
 .seccion-texto{
   font-size: 1.2rem;
 }
@@ -61,16 +60,6 @@ h1 {
 .seccion-clara{
   color: var(--Color-Azul-Partes-Letra);
   background-color: var(--Color-Blanco-Partes-Letra);
-}
-
-.btn-info{
-  font-size: 1.1rem;
-  margin: 20px;
-  font-weight: bold;
-}
-
-.texto-negro{
-  color: var(--Color-Azul-Partes-Letra);
 }
 
 .texto-blanco{
@@ -92,30 +81,10 @@ border: none;
 align-items: center;
 justify-content: space-between;
 }
+ 
+/*------------------- Sección Introductoria ---------------------------*/
 
-/* Establecer el color del texto de las opciones de la barra de navegación a blanco */
-.navbar-nav .nav-link {
-  color: var(--Color-Blanco-Partes-Letra) !important;
-}
-
-/* Agregar un subrayado blanco al pasar el mouse sobre las opciones */
-.navbar-nav .nav-link:hover {
-  text-decoration: underline;
-}   
-
-/* Establecer el color del texto de las opciones de la barra de navegación a blanco */
-.navbar.fixed-top .navbar-nav .nav-link {
-  color: var(--Color-Blanco-Partes-Letra) !important;
-}
-
-/* Agregar un subrayado blanco al pasar el mouse sobre las opciones */
-.navbar.fixed-top .navbar-nav .nav-link:hover {
-  text-decoration: underline;
-}
-
-/* Sección Hero */
-
-.hero {
+.intro {
   max-height: 500px;
   min-height: 350px;
   text-align: center;
@@ -126,8 +95,7 @@ justify-content: space-between;
   z-index: 1;
 }
 
-.carousel-item img,
-.carousel-item video {
+.carousel-item img{
   object-fit: cover;
   width: 100%;
   height: 100%;  
@@ -140,7 +108,7 @@ justify-content: space-between;
 }
 
 /* Estilos para la capa overlay */
-.overlay_Hero {
+.overlay_Intro {
   position: absolute;
   top: 50%; /* Coloca la capa en la mitad vertical del carrusel */
   left: 0;
@@ -152,21 +120,21 @@ justify-content: space-between;
 }
 
 /* Estilos para el contenedor del texto en la capa overlay */
-.container_Hero {
+.container_Intro {
   padding: 20px;
 }
 
 /* Estilos para el texto en la capa overlay */
-.content_Hero {
+.content_Intro {
   color: var(--Color-Blanco-Partes-Letra);
 }
 
-/* Sección Sobre Mi */
-.sobre-mi {
+/*------------------------------- Sección Sobre los Personajes ------------------------------------*/
+.sobre-Rick_Morty {
   padding: 20px;
 }
 
-.sobre-mi .contenedor{
+.sobre-Rick_Morty .contenedor{
   max-width: 800px;
   min-height: 200px;
   text-align: center;
@@ -184,13 +152,6 @@ justify-content: space-between;
   margin: 10px 0;
 }
 
-.experiencia i{
-  font-size: 2.5rem;
-  color: var(--Color-Naranja-Partes-Letra);
-  background-color: var(--Color-Azul-Partes-Letra);
-  padding: 8px 19px;
-  border-radius: 50%;
-}
 
 .experiencia .columna{
   padding: 20px;
@@ -201,98 +162,14 @@ justify-content: space-between;
   transition: all 0.2s ease-in;
 }
 
+/* Este es el bloque azul */
 .experiencia .columna:hover{
   color: var(--Color-Blanco-Partes-Letra);
   background-color: var(--Color-Azul-Partes-Letra);
 }
 
-.experiencia .columna:hover i{
-  color: var(--Color-Rojo-Partes-Letra);
-}
 
-.badges-contenedor{
-  font-size: 20px;
-  font-weight: bold;
-  margin: 5px 0;
-}
-
-.badge{
-  margin: 3px;
-  background-color: var(--Color-Amarillo-Partes-Letra);
-}
-
-/* Sección Proyectos */
-.proyectos-recientes{
-  padding: 40px;
-}
-
-.proyectos-recientes img{
-  height: 100%;
-  width: 100%;
-  padding: 10px;
-  border-radius: 10px;
-  display: block;
-  transition: all 0.2s ease;
-}
-
-.proyectos-contenedor{
-  padding-top: 10px;
-  margin-bottom: 90px;    
-}
-
-.overlay{
-  transition: all 0.2s ease;
-  opacity: 30;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.overlay p{
-  font-size: 25px;
-  font-weight: bold;
-  margin-bottom: 0;
-  color: var(--Color-Naranja-Partes-Letra);
-}
-
-.proyecto{
-  position: relative;
-}
-
-.proyecto img{
-  opacity: 0.8;
-  filter: grayscale(100%);
-}
-
-.proyecto:hover img{
-  opacity: 0.3;
-}
-
-.proyecto:hover .overlay{
-  opacity: 1;
-}
-
-.overlay .iconos-contenedor{
-  display: flex;
-}
-
-.overlay i{
-  font-size: 60px;
-  margin: 10px;
-  color: var(--Color-Naranja-Partes-Letra);
-}
-
-.proyecto:hover .overlay p {
-  color: var(--Color-Rojo-Partes-Letra);
-}
-
-.proyecto:hover .overlay i {
-  color: var(--Color-Rojo-Partes-Letra);
-}
-
-/* Sección presentation-table*/
+/*------------------------ Sección presentation-table--------------------*/
 .TituloBuscar{
   font-family: var(--Mi-Nombre);
   margin-top: 20px;
@@ -317,32 +194,35 @@ justify-content: space-between;
 }
 
 .table th{
-  background-color: #404040 !important;
+  background-color: var(--Color-Azul-Partes-Letra) !important;
   color: white;
   margin: 20px 5px;
-}
-
-/* Estilo del botón personalizado */
-.btn-custom {
-  background-color: #404040; /* Cambia este valor al color deseado */
-  color: #ffffff; /* Color del texto */
-  padding: 10px 20px; /* Espaciado interno */
-  border: none; /* Sin borde */
-  border-radius: 5px; /* Bordes redondeados */
-  cursor: pointer; /* Cursor tipo puntero */
-  font-size: 16px; /* Tamaño del texto */
-}
-
-/* Cambiar el color del botón al pasar el mouse */
-.btn-custom:hover {
-  background-color: #D65121; /* Cambia este valor al color deseado al pasar el mouse */
+  align-content: center;
+  vertical-align: middle; 
+  text-align: center; 
 }
 
 .controlTabla input {
   text-align: center;
 }
 
-/* Sección Contactame */
+/* Estilo del botón personalizado */
+.btn-custom {
+  background-color: var(--Color-Azul-Partes-Letra); /* Cambia este valor al color deseado */
+  color: #ffffff; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 10px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor tipo puntero */
+  font-size: 16px; /* Tamaño del texto */
+}
+
+/* Cambiar el color del botón al pasar el mouse */
+.btn-custom:hover {
+  background-color: var(--Color-Naranja-Partes-Letra); /* Cambia este valor al color deseado al pasar el mouse */
+}
+
+/*------------------ Sección Contactanos---------------------*/
 .contacto .container{
   max-width: 1100px;
   min-height: 200px;
@@ -394,7 +274,7 @@ justify-content: space-between;
   color: var(--Color-Blanco-Partes-Letra);
 }
 
-/* Sección Footer */
+/*------------------------- Sección Footer --------------------------*/
 
 footer{
   min-height: 100px;
@@ -448,37 +328,3 @@ footer{
       display: none;
   }
 }
-
-@media screen and (min-width: 400px){
-  .hero-inferior-imagen{
-      max-height: 400px;
-      min-height: 350px;
-  }
-}
-
-@media screen and (max-width: 400px){
-  .overlay p{
-      font-size: 18px;
-  }
-  .overlay i{
-      font-size: 40px;
-  }
-}
-
-@media screen and (max-width: 800px){
-  .testimonio-imagen{
-      height: 80px;
-      width: 80px;
-  }
-  .testimonio-texto{
-      font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 400px){
-  .badges-contenedor{
-      font-size: 0.9rem;
-      margin: 2px 0;
-  }
-}
-
